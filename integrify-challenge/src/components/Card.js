@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Button from "./Button";
 
 class Card extends Component {
   state = {
@@ -32,6 +33,7 @@ class Card extends Component {
                 <h2>{name}</h2>
                 <h6>{username}</h6>
                 <a href="mailto:{email}">{email}</a>
+                <Button />
                 <hr />
               </div>
             );
