@@ -22,17 +22,16 @@ class Card extends Component {
     const { isLoading, users, error } = this.state;
     return (
       <React.Fragment>
-        <h1>Random User</h1>
-
         {error ? <p>{error.message}</p> : null}
 
         {!isLoading ? (
           users.map((user) => {
             const { username, name, email } = user;
             return (
-              <div key={username}>
-                <p>Name: {name}</p>
-                <p>Email Address: {email}</p>
+              <div key={username} className="contact-card">
+                <h2>{name}</h2>
+                <h6>{username}</h6>
+                <a href="mailto:{email}">{email}</a>
                 <hr />
               </div>
             );
