@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Button from "./Button";
+// import Button from "./Button";
 
 class Card extends Component {
   state = {
@@ -33,7 +33,7 @@ class Card extends Component {
                 <h2>{name}</h2>
                 <h6>{username}</h6>
                 <a href="mailto:{email}">{email}</a>
-                <Button />
+                <button className="btn btn-secondary btn-sm m-2">More Info</button>
                 <hr />
               </div>
             );
